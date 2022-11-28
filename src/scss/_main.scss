@@ -94,15 +94,18 @@
 }
 .catalog {
 
-    // .catalog__about
+    // .catalog__about/featured
 
-    &__about {
+    &__about,
+    &__featured,
+    &__categories {
         width: 100%;
         margin-bottom: 70px;
     }
 
-    // .catalog__btn
 
+    // .catalog__btn
+    
     &__btn {
         margin-bottom: 20px;
         &-more{
@@ -113,11 +116,25 @@
             padding: 15px 40px;
         }
     }
-
+    
     // .catalog__item
-
+    
     &__item {
         margin-bottom: 30px;
+        &_no-shadow,
+        &_icons,
+        &_tags{
+            box-shadow: none;
+        }
+        &_icons,
+        &_tags{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3px;
+        }
+        &_tags{
+            gap: 10px;
+        }
     }
     &__item:last-child {
         margin-bottom: 0px;
@@ -157,6 +174,62 @@
         font-family: 'PT Sans';
         line-height: 24px;
         color: $primary-grey;
+    }
+
+    &__social{
+        margin-bottom: 70px;
+    }
+
+    &__lists{
+        width: 100%;
+
+    }
+    &__list{
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #E5E5E5;
+        color: $primary-grey;
+        transition: .3s ease all;
+        &:hover{
+            color: $secondary;
+        }
+    }
+
+    // .catalog__icon
+    &__icon{
+        width: 88px;
+        height: 88px;
+        padding: 17px 15px;
+    }
+    &__tag{
+        padding: 6px 14px;
+        font-family: 'PT Serif';
+        line-height: 19px;
+    }
+    &__icon,
+    &__tag {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        color: #999999;
+        background: $secondary-grey;
+        transition: .3s ease all;
+        &:hover{
+            background: $primary-grey;
+            color: $primary-white;
+            svg path{
+                fill: $primary-white;
+            }
+        }
+        // .icon__number
+        
+        &__number {
+        }
+        
+        
     }
 }
 
