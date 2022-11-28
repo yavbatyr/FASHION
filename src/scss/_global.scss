@@ -96,12 +96,17 @@ font-weight: 400;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
-    &__card{
+    &-card{
         font-size: 12px;
         line-height: 16px;
         color: #C9A96E;
+        text-align: center;
+        font-family: 'PT Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
     }
-    &__history{
+    &-history{
         font-family: 'PT Serif';
         font-size: 12px;
         line-height: 16px;
@@ -114,7 +119,10 @@ font-weight: 400;
     font-size: 40px;
     line-height: 50px;
     color: #FFFFFF;
-    &__card{
+    &-card{
+        font-family: 'PT Serif';
+        font-weight: 700;
+        font-size: 40px;
         font-size: 20px;
         line-height: 28px;
         text-align: center;
