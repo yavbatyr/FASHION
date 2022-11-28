@@ -98,6 +98,7 @@
 
     &__about {
         width: 100%;
+        margin-bottom: 70px;
     }
 
     // .catalog__btn
@@ -116,6 +117,10 @@
     // .catalog__item
 
     &__item {
+        margin-bottom: 30px;
+    }
+    &__item:last-child {
+        margin-bottom: 0px;
     }
 
     // .catalog__img
@@ -154,5 +159,4 @@
         color: $primary-grey;
     }
 }
-.btn {
-}
+
