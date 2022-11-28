@@ -8,11 +8,11 @@
 .catalog {
     max-width: 770px;
     width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
 
     &__wrapper{
         padding: 60px 0 0 0;
